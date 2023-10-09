@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="es2_s2.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="div_header">
+        <div class="header_img1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Medium_%28website%29_logo.svg/1200px-Medium_%28website%29_logo.svg.png"
+          />
+        </div>
+
+        <div class="header_img2">
+          <div class="icon">
+            <button>
+              <img
+                class="menu1"
+                src="https://cdn.icon-icons.com/icons2/1206/PNG/512/1491254410-searchfinddetailzoom_82949.png"
+              />
+            </button>
+          </div>
+          <div class="icon">
+            <button>
+              <img
+                class="menu2"
+                src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+              />
+            </button>
+          </div>
+          <div class="icon">
+            <button>
+              <img
+                class="menu3"
+                src="https://cdn.icon-icons.com/icons2/1993/PNG/512/alarm_alert_attention_bell_clock_notification_ring_icon_123203.png"
+              />
+            </button>
+          </div>
+          <input type="text" />
+          <div class="icon" id="profilo"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="colonna1">
+        <div>
+          <p>FOLLOWING <b>RECOMMANDED FOR YOU</b></p>
+        </div>
+        <div class="articoli">
+          <div>
+            <div class="div_utente">
+              <div>
+                <img
+                  class="img_utente"
+                  src="https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg"
+                />
+              </div>
+              <div>
+                <b class="nome_utente">Kolby sisk in Udacity eng & Data</b>
+              </div>
+            </div>
+            <div>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus expedita perferendis neque qui temporibus
+                aspernatur quaerat excepturi.
+              </p>
+            </div>
+            <div class="footer_articoli">
+              <div>
+                <output>Dec 3</output>
+                <output>4min read</output>
+                <output>React</output>
+                <output>popular on Medium </output>
+              </div>
+              <div>
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+                  />
+                </button>
+
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAdVBMVEX///8AAAD09PR+fn64uLjFxcXw8PCJiYnQ0ND5+fmMjIxXV1cuLi5iYmKrq6ttbW3p6ekKCgqbm5s1NTVOTk4XFxfNzc2hoaHd3d08PDxFRUVmZmawsLDm5uYwMDDW1tZ5eXkkJCQfHx+VlZW+vr4aGho6Ojrmv75gAAAEkUlEQVR4nO3b6XaiQBAFYBYVcEGiiEviQozz/o84EEdx6equKswZzbnfb/seGnqF1vMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB59eJOOumH0STtFOtHZRZVZhT2q8y494jATBkYbKPB9OCfzIZ5WLS9oKAb5dNZkzkd9OOgTWCvCPNhE3iYDqItLzCeT/175b7b4mq6+6Ehc7nf6gNLQ+B0HjtLriNDwaPxQnk1izEV+bbLHhvoR47+NCdLfpfWNKqgb4t828sD6WdQB84tRQtT47w07Igv5+vTkbkUtv2OqbVfBZLtdPLmKFqJEtnlhO5I33bPbyXW9nBEPMSAbtiXckmvyQaszAH7rmU5K3Bn6EsJr36iGgYrZuY7s4bMG1YNiHeBwYhZtOqI3Bpm3Pr5/opVw8zV/Rqj20BOXznh3m/u7a6FjDzBQ6gGC339qj7Dqt+7KJNRQ8kNu6lhISrq+x+M+n0IM52zhTTwYrZY89v20Zt7SbQQRvoHxxokZkxiVzbNWGFdGhg5Gyl7UG7s7Im8CeLSuZFuxUV937Wk6SgyrY1U2kBrp8WzbDQ4Wjn2T65Fn8nd0H6hx59yGu/Hsl1FUd9PrfXT3G/rI0xbBMpG35OZrX7sJcw1S89W5R0DA11Za4/R9OrKgdwA61qZ79cdaaIsa5uZd8pMcl8hW4hcB0rWP5eWliXpRplJLUmzpTKwGmYW0kn+jH6hUkjn5DNibFY2+WpjsPZibVnLOKob8mpf5kD7mxSbokVZeszT9hiyY+sG+tpcPR5Uj5+qX6K/npE5sVQH7jxt961QFey53jPRcnOi/hqXXqkvTL1E7OkjV8ZM7VRdKb2Z+0cUan/TooJTY+ZaHzjz1CN6s1h/YAU3xgqqZ4lq59qmgtRE+FwV/OVN9OCV+sI/MMgsjUuZFoPMxtNtbL4R9fMC9erv8dNE3mKi31AVTLTr9/Me/JZ28V4vjfRLNWLV4WleYp1E5kD9Hft4jcW2PjD21prXQ99eYbtUj8q/fcOr7oQv88oiUZa1vb1XNqlP8piD9OPJyXeLkL9kr5G7wZpyR0iPy16pChy3uDv2D0y6F7+WRtEqUPPqPnecKPmjyLS+upd/ezk9wBf5+KIJPHdp+cqDWDM2nurzmeTj/tFPfACd/eAH0N/5CftqpSVrpMSa/4ZstieW2Zdkg+HNITjJUmHEPJP3TMdIvIB/Nf/xIFDJDryfchJuixrxj3Il3JHv/uQVUUPuM9wZAhNePxyLDkfzJouQfRivxwvsmwNTxhu2iaB6tT3jckSHUBnfaz/JQX7rWmANiR23Rdf1oWJVyAK/nAdibSfBU+ts2lcdabY+xIO0STjPSNuPf3hr43H2WhmqD6VH1FPc9HWH0kPqIocT9588go5p7PuTqi7lnyw1zRiDVP3PiSw19aZxhxeYLO7+GNLuTxx1ZhHmm6b9138M2QqPf18L4t3lH0Nm0/ePniTwJf7as74IbPsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJ/0F/rZH3qRcLNkAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img_articoli"
+              src="https://img.wallpapic.it/i7071-425-329/thumb/neri-buio-per-due-monitor-bianchi-sfondo.jpg"
+            />
+          </div>
+        </div>
+        <div class="articoli">
+          <div>
+            <div class="div_utente">
+              <div>
+                <img
+                  class="img_utente"
+                  src="https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg"
+                />
+              </div>
+              <div>
+                <b class="nome_utente">Kolby sisk in Udacity eng & Data</b>
+              </div>
+            </div>
+            <div>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus expedita perferendis neque qui temporibus
+                aspernatur quaerat excepturi.
+              </p>
+            </div>
+            <div class="footer_articoli">
+              <div>
+                <output>Dec 3</output>
+                <output>4min read</output>
+                <output>React</output>
+                <output>popular on Medium </output>
+              </div>
+              <div>
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+                  />
+                </button>
+
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAdVBMVEX///8AAAD09PR+fn64uLjFxcXw8PCJiYnQ0ND5+fmMjIxXV1cuLi5iYmKrq6ttbW3p6ekKCgqbm5s1NTVOTk4XFxfNzc2hoaHd3d08PDxFRUVmZmawsLDm5uYwMDDW1tZ5eXkkJCQfHx+VlZW+vr4aGho6Ojrmv75gAAAEkUlEQVR4nO3b6XaiQBAFYBYVcEGiiEviQozz/o84EEdx6equKswZzbnfb/seGnqF1vMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB59eJOOumH0STtFOtHZRZVZhT2q8y494jATBkYbKPB9OCfzIZ5WLS9oKAb5dNZkzkd9OOgTWCvCPNhE3iYDqItLzCeT/175b7b4mq6+6Ehc7nf6gNLQ+B0HjtLriNDwaPxQnk1izEV+bbLHhvoR47+NCdLfpfWNKqgb4t828sD6WdQB84tRQtT47w07Igv5+vTkbkUtv2OqbVfBZLtdPLmKFqJEtnlhO5I33bPbyXW9nBEPMSAbtiXckmvyQaszAH7rmU5K3Bn6EsJr36iGgYrZuY7s4bMG1YNiHeBwYhZtOqI3Bpm3Pr5/opVw8zV/Rqj20BOXznh3m/u7a6FjDzBQ6gGC339qj7Dqt+7KJNRQ8kNu6lhISrq+x+M+n0IM52zhTTwYrZY89v20Zt7SbQQRvoHxxokZkxiVzbNWGFdGhg5Gyl7UG7s7Im8CeLSuZFuxUV937Wk6SgyrY1U2kBrp8WzbDQ4Wjn2T65Fn8nd0H6hx59yGu/Hsl1FUd9PrfXT3G/rI0xbBMpG35OZrX7sJcw1S89W5R0DA11Za4/R9OrKgdwA61qZ79cdaaIsa5uZd8pMcl8hW4hcB0rWP5eWliXpRplJLUmzpTKwGmYW0kn+jH6hUkjn5DNibFY2+WpjsPZibVnLOKob8mpf5kD7mxSbokVZeszT9hiyY+sG+tpcPR5Uj5+qX6K/npE5sVQH7jxt961QFey53jPRcnOi/hqXXqkvTL1E7OkjV8ZM7VRdKb2Z+0cUan/TooJTY+ZaHzjz1CN6s1h/YAU3xgqqZ4lq59qmgtRE+FwV/OVN9OCV+sI/MMgsjUuZFoPMxtNtbL4R9fMC9erv8dNE3mKi31AVTLTr9/Me/JZ28V4vjfRLNWLV4WleYp1E5kD9Hft4jcW2PjD21prXQ99eYbtUj8q/fcOr7oQv88oiUZa1vb1XNqlP8piD9OPJyXeLkL9kr5G7wZpyR0iPy16pChy3uDv2D0y6F7+WRtEqUPPqPnecKPmjyLS+upd/ezk9wBf5+KIJPHdp+cqDWDM2nurzmeTj/tFPfACd/eAH0N/5CftqpSVrpMSa/4ZstieW2Zdkg+HNITjJUmHEPJP3TMdIvIB/Nf/xIFDJDryfchJuixrxj3Il3JHv/uQVUUPuM9wZAhNePxyLDkfzJouQfRivxwvsmwNTxhu2iaB6tT3jckSHUBnfaz/JQX7rWmANiR23Rdf1oWJVyAK/nAdibSfBU+ts2lcdabY+xIO0STjPSNuPf3hr43H2WhmqD6VH1FPc9HWH0kPqIocT9588go5p7PuTqi7lnyw1zRiDVP3PiSw19aZxhxeYLO7+GNLuTxx1ZhHmm6b9138M2QqPf18L4t3lH0Nm0/ePniTwJf7as74IbPsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJ/0F/rZH3qRcLNkAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img_articoli"
+              src="https://img.wallpapic.it/i7071-425-329/thumb/neri-buio-per-due-monitor-bianchi-sfondo.jpg"
+            />
+          </div>
+        </div>
+        <div class="articoli">
+          <div>
+            <div class="div_utente">
+              <div>
+                <img
+                  class="img_utente"
+                  src="https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg"
+                />
+              </div>
+              <div>
+                <b class="nome_utente">Kolby sisk in Udacity eng & Data</b>
+              </div>
+            </div>
+            <div>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus expedita perferendis neque qui temporibus
+                aspernatur quaerat excepturi.
+              </p>
+            </div>
+            <div class="footer_articoli">
+              <div>
+                <output>Dec 3</output>
+                <output>4min read</output>
+                <output>React</output>
+                <output>popular on Medium </output>
+              </div>
+              <div>
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+                  />
+                </button>
+
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAdVBMVEX///8AAAD09PR+fn64uLjFxcXw8PCJiYnQ0ND5+fmMjIxXV1cuLi5iYmKrq6ttbW3p6ekKCgqbm5s1NTVOTk4XFxfNzc2hoaHd3d08PDxFRUVmZmawsLDm5uYwMDDW1tZ5eXkkJCQfHx+VlZW+vr4aGho6Ojrmv75gAAAEkUlEQVR4nO3b6XaiQBAFYBYVcEGiiEviQozz/o84EEdx6equKswZzbnfb/seGnqF1vMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB59eJOOumH0STtFOtHZRZVZhT2q8y494jATBkYbKPB9OCfzIZ5WLS9oKAb5dNZkzkd9OOgTWCvCPNhE3iYDqItLzCeT/175b7b4mq6+6Ehc7nf6gNLQ+B0HjtLriNDwaPxQnk1izEV+bbLHhvoR47+NCdLfpfWNKqgb4t828sD6WdQB84tRQtT47w07Igv5+vTkbkUtv2OqbVfBZLtdPLmKFqJEtnlhO5I33bPbyXW9nBEPMSAbtiXckmvyQaszAH7rmU5K3Bn6EsJr36iGgYrZuY7s4bMG1YNiHeBwYhZtOqI3Bpm3Pr5/opVw8zV/Rqj20BOXznh3m/u7a6FjDzBQ6gGC339qj7Dqt+7KJNRQ8kNu6lhISrq+x+M+n0IM52zhTTwYrZY89v20Zt7SbQQRvoHxxokZkxiVzbNWGFdGhg5Gyl7UG7s7Im8CeLSuZFuxUV937Wk6SgyrY1U2kBrp8WzbDQ4Wjn2T65Fn8nd0H6hx59yGu/Hsl1FUd9PrfXT3G/rI0xbBMpG35OZrX7sJcw1S89W5R0DA11Za4/R9OrKgdwA61qZ79cdaaIsa5uZd8pMcl8hW4hcB0rWP5eWliXpRplJLUmzpTKwGmYW0kn+jH6hUkjn5DNibFY2+WpjsPZibVnLOKob8mpf5kD7mxSbokVZeszT9hiyY+sG+tpcPR5Uj5+qX6K/npE5sVQH7jxt961QFey53jPRcnOi/hqXXqkvTL1E7OkjV8ZM7VRdKb2Z+0cUan/TooJTY+ZaHzjz1CN6s1h/YAU3xgqqZ4lq59qmgtRE+FwV/OVN9OCV+sI/MMgsjUuZFoPMxtNtbL4R9fMC9erv8dNE3mKi31AVTLTr9/Me/JZ28V4vjfRLNWLV4WleYp1E5kD9Hft4jcW2PjD21prXQ99eYbtUj8q/fcOr7oQv88oiUZa1vb1XNqlP8piD9OPJyXeLkL9kr5G7wZpyR0iPy16pChy3uDv2D0y6F7+WRtEqUPPqPnecKPmjyLS+upd/ezk9wBf5+KIJPHdp+cqDWDM2nurzmeTj/tFPfACd/eAH0N/5CftqpSVrpMSa/4ZstieW2Zdkg+HNITjJUmHEPJP3TMdIvIB/Nf/xIFDJDryfchJuixrxj3Il3JHv/uQVUUPuM9wZAhNePxyLDkfzJouQfRivxwvsmwNTxhu2iaB6tT3jckSHUBnfaz/JQX7rWmANiR23Rdf1oWJVyAK/nAdibSfBU+ts2lcdabY+xIO0STjPSNuPf3hr43H2WhmqD6VH1FPc9HWH0kPqIocT9588go5p7PuTqi7lnyw1zRiDVP3PiSw19aZxhxeYLO7+GNLuTxx1ZhHmm6b9138M2QqPf18L4t3lH0Nm0/ePniTwJf7as74IbPsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJ/0F/rZH3qRcLNkAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img_articoli"
+              src="https://img.wallpapic.it/i7071-425-329/thumb/neri-buio-per-due-monitor-bianchi-sfondo.jpg"
+            />
+          </div>
+        </div>
+        <div class="articoli">
+          <div>
+            <div class="div_utente">
+              <div>
+                <img
+                  class="img_utente"
+                  src="https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg"
+                />
+              </div>
+              <div>
+                <b class="nome_utente">Kolby sisk in Udacity eng & Data</b>
+              </div>
+            </div>
+            <div>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus expedita perferendis neque qui temporibus
+                aspernatur quaerat excepturi.
+              </p>
+            </div>
+            <div class="footer_articoli">
+              <div>
+                <output>Dec 3</output>
+                <output>4min read</output>
+                <output>React</output>
+                <output>popular on Medium </output>
+              </div>
+              <div>
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+                  />
+                </button>
+
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAdVBMVEX///8AAAD09PR+fn64uLjFxcXw8PCJiYnQ0ND5+fmMjIxXV1cuLi5iYmKrq6ttbW3p6ekKCgqbm5s1NTVOTk4XFxfNzc2hoaHd3d08PDxFRUVmZmawsLDm5uYwMDDW1tZ5eXkkJCQfHx+VlZW+vr4aGho6Ojrmv75gAAAEkUlEQVR4nO3b6XaiQBAFYBYVcEGiiEviQozz/o84EEdx6equKswZzbnfb/seGnqF1vMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB59eJOOumH0STtFOtHZRZVZhT2q8y494jATBkYbKPB9OCfzIZ5WLS9oKAb5dNZkzkd9OOgTWCvCPNhE3iYDqItLzCeT/175b7b4mq6+6Ehc7nf6gNLQ+B0HjtLriNDwaPxQnk1izEV+bbLHhvoR47+NCdLfpfWNKqgb4t828sD6WdQB84tRQtT47w07Igv5+vTkbkUtv2OqbVfBZLtdPLmKFqJEtnlhO5I33bPbyXW9nBEPMSAbtiXckmvyQaszAH7rmU5K3Bn6EsJr36iGgYrZuY7s4bMG1YNiHeBwYhZtOqI3Bpm3Pr5/opVw8zV/Rqj20BOXznh3m/u7a6FjDzBQ6gGC339qj7Dqt+7KJNRQ8kNu6lhISrq+x+M+n0IM52zhTTwYrZY89v20Zt7SbQQRvoHxxokZkxiVzbNWGFdGhg5Gyl7UG7s7Im8CeLSuZFuxUV937Wk6SgyrY1U2kBrp8WzbDQ4Wjn2T65Fn8nd0H6hx59yGu/Hsl1FUd9PrfXT3G/rI0xbBMpG35OZrX7sJcw1S89W5R0DA11Za4/R9OrKgdwA61qZ79cdaaIsa5uZd8pMcl8hW4hcB0rWP5eWliXpRplJLUmzpTKwGmYW0kn+jH6hUkjn5DNibFY2+WpjsPZibVnLOKob8mpf5kD7mxSbokVZeszT9hiyY+sG+tpcPR5Uj5+qX6K/npE5sVQH7jxt961QFey53jPRcnOi/hqXXqkvTL1E7OkjV8ZM7VRdKb2Z+0cUan/TooJTY+ZaHzjz1CN6s1h/YAU3xgqqZ4lq59qmgtRE+FwV/OVN9OCV+sI/MMgsjUuZFoPMxtNtbL4R9fMC9erv8dNE3mKi31AVTLTr9/Me/JZ28V4vjfRLNWLV4WleYp1E5kD9Hft4jcW2PjD21prXQ99eYbtUj8q/fcOr7oQv88oiUZa1vb1XNqlP8piD9OPJyXeLkL9kr5G7wZpyR0iPy16pChy3uDv2D0y6F7+WRtEqUPPqPnecKPmjyLS+upd/ezk9wBf5+KIJPHdp+cqDWDM2nurzmeTj/tFPfACd/eAH0N/5CftqpSVrpMSa/4ZstieW2Zdkg+HNITjJUmHEPJP3TMdIvIB/Nf/xIFDJDryfchJuixrxj3Il3JHv/uQVUUPuM9wZAhNePxyLDkfzJouQfRivxwvsmwNTxhu2iaB6tT3jckSHUBnfaz/JQX7rWmANiR23Rdf1oWJVyAK/nAdibSfBU+ts2lcdabY+xIO0STjPSNuPf3hr43H2WhmqD6VH1FPc9HWH0kPqIocT9588go5p7PuTqi7lnyw1zRiDVP3PiSw19aZxhxeYLO7+GNLuTxx1ZhHmm6b9138M2QqPf18L4t3lH0Nm0/ePniTwJf7as74IbPsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJ/0F/rZH3qRcLNkAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img_articoli"
+              src="https://img.wallpapic.it/i7071-425-329/thumb/neri-buio-per-due-monitor-bianchi-sfondo.jpg"
+            />
+          </div>
+        </div>
+        <div class="articoli">
+          <div>
+            <div class="div_utente">
+              <div>
+                <img
+                  class="img_utente"
+                  src="https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg"
+                />
+              </div>
+              <div>
+                <b class="nome_utente">Kolby sisk in Udacity eng & Data</b>
+              </div>
+            </div>
+            <div>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus expedita perferendis neque qui temporibus
+                aspernatur quaerat excepturi.
+              </p>
+            </div>
+            <div class="footer_articoli">
+              <div>
+                <output>Dec 3</output>
+                <output>4min read</output>
+                <output>React</output>
+                <output>popular on Medium </output>
+              </div>
+              <div>
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+                  />
+                </button>
+
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAdVBMVEX///8AAAD09PR+fn64uLjFxcXw8PCJiYnQ0ND5+fmMjIxXV1cuLi5iYmKrq6ttbW3p6ekKCgqbm5s1NTVOTk4XFxfNzc2hoaHd3d08PDxFRUVmZmawsLDm5uYwMDDW1tZ5eXkkJCQfHx+VlZW+vr4aGho6Ojrmv75gAAAEkUlEQVR4nO3b6XaiQBAFYBYVcEGiiEviQozz/o84EEdx6equKswZzbnfb/seGnqF1vMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB59eJOOumH0STtFOtHZRZVZhT2q8y494jATBkYbKPB9OCfzIZ5WLS9oKAb5dNZkzkd9OOgTWCvCPNhE3iYDqItLzCeT/175b7b4mq6+6Ehc7nf6gNLQ+B0HjtLriNDwaPxQnk1izEV+bbLHhvoR47+NCdLfpfWNKqgb4t828sD6WdQB84tRQtT47w07Igv5+vTkbkUtv2OqbVfBZLtdPLmKFqJEtnlhO5I33bPbyXW9nBEPMSAbtiXckmvyQaszAH7rmU5K3Bn6EsJr36iGgYrZuY7s4bMG1YNiHeBwYhZtOqI3Bpm3Pr5/opVw8zV/Rqj20BOXznh3m/u7a6FjDzBQ6gGC339qj7Dqt+7KJNRQ8kNu6lhISrq+x+M+n0IM52zhTTwYrZY89v20Zt7SbQQRvoHxxokZkxiVzbNWGFdGhg5Gyl7UG7s7Im8CeLSuZFuxUV937Wk6SgyrY1U2kBrp8WzbDQ4Wjn2T65Fn8nd0H6hx59yGu/Hsl1FUd9PrfXT3G/rI0xbBMpG35OZrX7sJcw1S89W5R0DA11Za4/R9OrKgdwA61qZ79cdaaIsa5uZd8pMcl8hW4hcB0rWP5eWliXpRplJLUmzpTKwGmYW0kn+jH6hUkjn5DNibFY2+WpjsPZibVnLOKob8mpf5kD7mxSbokVZeszT9hiyY+sG+tpcPR5Uj5+qX6K/npE5sVQH7jxt961QFey53jPRcnOi/hqXXqkvTL1E7OkjV8ZM7VRdKb2Z+0cUan/TooJTY+ZaHzjz1CN6s1h/YAU3xgqqZ4lq59qmgtRE+FwV/OVN9OCV+sI/MMgsjUuZFoPMxtNtbL4R9fMC9erv8dNE3mKi31AVTLTr9/Me/JZ28V4vjfRLNWLV4WleYp1E5kD9Hft4jcW2PjD21prXQ99eYbtUj8q/fcOr7oQv88oiUZa1vb1XNqlP8piD9OPJyXeLkL9kr5G7wZpyR0iPy16pChy3uDv2D0y6F7+WRtEqUPPqPnecKPmjyLS+upd/ezk9wBf5+KIJPHdp+cqDWDM2nurzmeTj/tFPfACd/eAH0N/5CftqpSVrpMSa/4ZstieW2Zdkg+HNITjJUmHEPJP3TMdIvIB/Nf/xIFDJDryfchJuixrxj3Il3JHv/uQVUUPuM9wZAhNePxyLDkfzJouQfRivxwvsmwNTxhu2iaB6tT3jckSHUBnfaz/JQX7rWmANiR23Rdf1oWJVyAK/nAdibSfBU+ts2lcdabY+xIO0STjPSNuPf3hr43H2WhmqD6VH1FPc9HWH0kPqIocT9588go5p7PuTqi7lnyw1zRiDVP3PiSw19aZxhxeYLO7+GNLuTxx1ZhHmm6b9138M2QqPf18L4t3lH0Nm0/ePniTwJf7as74IbPsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJ/0F/rZH3qRcLNkAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img_articoli"
+              src="https://img.wallpapic.it/i7071-425-329/thumb/neri-buio-per-due-monitor-bianchi-sfondo.jpg"
+            />
+          </div>
+        </div>
+        <div class="articoli">
+          <div>
+            <div class="div_utente">
+              <div>
+                <img
+                  class="img_utente"
+                  src="https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg"
+                />
+              </div>
+              <div>
+                <b class="nome_utente">Kolby sisk in Udacity eng & Data</b>
+              </div>
+            </div>
+            <div>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus expedita perferendis neque qui temporibus
+                aspernatur quaerat excepturi.
+              </p>
+            </div>
+            <div class="footer_articoli">
+              <div>
+                <output>Dec 3</output>
+                <output>4min read</output>
+                <output>React</output>
+                <output>popular on Medium </output>
+              </div>
+              <div>
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src="https://cdn.icon-icons.com/icons2/3138/PNG/512/bookmark_save_storage_basic_icon_192482.png"
+                  />
+                </button>
+
+                <button class="bottone_articoli">
+                  <img
+                    class="menu_articoli"
+                    src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAdVBMVEX///8AAAD09PR+fn64uLjFxcXw8PCJiYnQ0ND5+fmMjIxXV1cuLi5iYmKrq6ttbW3p6ekKCgqbm5s1NTVOTk4XFxfNzc2hoaHd3d08PDxFRUVmZmawsLDm5uYwMDDW1tZ5eXkkJCQfHx+VlZW+vr4aGho6Ojrmv75gAAAEkUlEQVR4nO3b6XaiQBAFYBYVcEGiiEviQozz/o84EEdx6equKswZzbnfb/seGnqF1vMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB59eJOOumH0STtFOtHZRZVZhT2q8y494jATBkYbKPB9OCfzIZ5WLS9oKAb5dNZkzkd9OOgTWCvCPNhE3iYDqItLzCeT/175b7b4mq6+6Ehc7nf6gNLQ+B0HjtLriNDwaPxQnk1izEV+bbLHhvoR47+NCdLfpfWNKqgb4t828sD6WdQB84tRQtT47w07Igv5+vTkbkUtv2OqbVfBZLtdPLmKFqJEtnlhO5I33bPbyXW9nBEPMSAbtiXckmvyQaszAH7rmU5K3Bn6EsJr36iGgYrZuY7s4bMG1YNiHeBwYhZtOqI3Bpm3Pr5/opVw8zV/Rqj20BOXznh3m/u7a6FjDzBQ6gGC339qj7Dqt+7KJNRQ8kNu6lhISrq+x+M+n0IM52zhTTwYrZY89v20Zt7SbQQRvoHxxokZkxiVzbNWGFdGhg5Gyl7UG7s7Im8CeLSuZFuxUV937Wk6SgyrY1U2kBrp8WzbDQ4Wjn2T65Fn8nd0H6hx59yGu/Hsl1FUd9PrfXT3G/rI0xbBMpG35OZrX7sJcw1S89W5R0DA11Za4/R9OrKgdwA61qZ79cdaaIsa5uZd8pMcl8hW4hcB0rWP5eWliXpRplJLUmzpTKwGmYW0kn+jH6hUkjn5DNibFY2+WpjsPZibVnLOKob8mpf5kD7mxSbokVZeszT9hiyY+sG+tpcPR5Uj5+qX6K/npE5sVQH7jxt961QFey53jPRcnOi/hqXXqkvTL1E7OkjV8ZM7VRdKb2Z+0cUan/TooJTY+ZaHzjz1CN6s1h/YAU3xgqqZ4lq59qmgtRE+FwV/OVN9OCV+sI/MMgsjUuZFoPMxtNtbL4R9fMC9erv8dNE3mKi31AVTLTr9/Me/JZ28V4vjfRLNWLV4WleYp1E5kD9Hft4jcW2PjD21prXQ99eYbtUj8q/fcOr7oQv88oiUZa1vb1XNqlP8piD9OPJyXeLkL9kr5G7wZpyR0iPy16pChy3uDv2D0y6F7+WRtEqUPPqPnecKPmjyLS+upd/ezk9wBf5+KIJPHdp+cqDWDM2nurzmeTj/tFPfACd/eAH0N/5CftqpSVrpMSa/4ZstieW2Zdkg+HNITjJUmHEPJP3TMdIvIB/Nf/xIFDJDryfchJuixrxj3Il3JHv/uQVUUPuM9wZAhNePxyLDkfzJouQfRivxwvsmwNTxhu2iaB6tT3jckSHUBnfaz/JQX7rWmANiR23Rdf1oWJVyAK/nAdibSfBU+ts2lcdabY+xIO0STjPSNuPf3hr43H2WhmqD6VH1FPc9HWH0kPqIocT9588go5p7PuTqi7lnyw1zRiDVP3PiSw19aZxhxeYLO7+GNLuTxx1ZhHmm6b9138M2QqPf18L4t3lH0Nm0/ePniTwJf7as74IbPsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJ/0F/rZH3qRcLNkAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img_articoli"
+              src="https://img.wallpapic.it/i7071-425-329/thumb/neri-buio-per-due-monitor-bianchi-sfondo.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="colonna2">
+        <div class="div_tw">
+          <img
+            class="img_colonna2"
+            src="https://seeklogo.com/images/M/medium-logo-F0ACFCCD58-seeklogo.com.png"
+          />
+          <h2>+</h2>
+          <img
+            class="img_colonna2"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/800px-Logo_of_Twitter.svg.png"
+          />
+        </div>
+
+        <div class="colonna_tw">
+          <div>
+            <p id="discovery">
+              Discover medium writers you alredy <br />follow on twitter.
+            </p>
+          </div>
+          <div class="div_tw_button">
+            <button id="tw_button">
+              <img
+                class="img_tw_button"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/800px-Logo_of_Twitter.svg.png"
+              />
+              <p class="p_tw">content to twitter</p>
+            </button>
+          </div>
+          <div>
+            <p>maybe later</p>
+          </div>
+        </div>
+        <div>
+          <h3 id="recom_h3">Recommended topic</h3>
+          <div class="div_recom">
+            <button class="b_recom">Tecnolog</button>
+            <button class="b_recom">money</button>
+            <button class="b_recom">business</button>
+            <button class="b_recom">productivity</button>
+            <button class="b_recom">psychology</button>
+            <button class="b_recom">Mindfylness</button>
+            <button class="b_recom">art</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
